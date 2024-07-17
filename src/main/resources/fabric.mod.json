@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "pm",
+  "version": "${version}",
+  "name": "Project: Machines",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/pm/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.blackfur.pm.client.ProjectMachinesClient"
+    ],
+    "main": [
+      "me.blackfur.pm.ProjectMachines"
+    ]
+  },
+  "mixins": [
+    "pm.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
