@@ -10,6 +10,9 @@
   "icon": "assets/pm/icon.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "me.blackfur.pm.datagen.ProjectMachinesDatagen"
+    ],
     "client": [
       "me.blackfur.pm.client.ProjectMachinesClient"
     ],
