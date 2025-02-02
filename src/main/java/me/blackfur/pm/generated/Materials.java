@@ -1,4 +1,4 @@
-package me.blackfur.pm.materials;
+package me.blackfur.pm.generated;
 
 import java.util.List;
 

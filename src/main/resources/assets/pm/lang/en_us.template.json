@@ -1,3 +1,4 @@
-{  "itemGroup.pm.natural": "Project: Machines (Naturals)"
-
+{
+  "itemGroup.pm.natural": "Project: Machines (Naturals)",
+  "itemGroup.pm.machine": "Project: Machines (Machines)"
 }

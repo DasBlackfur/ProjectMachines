@@ -1,9 +1,6 @@
 package me.blackfur.pm.datagen;
 
-import me.blackfur.pm.datagen.providers.ConfiguredFeatureProvider;
-import me.blackfur.pm.datagen.providers.ModelProvider;
-import me.blackfur.pm.datagen.providers.PlacedFeatureProvider;
-import me.blackfur.pm.datagen.providers.TranslationProvider;
+import me.blackfur.pm.datagen.providers.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -18,6 +15,9 @@ public class ProjectMachinesDatagen implements DataGeneratorEntrypoint {
         pack.addProvider(TranslationProvider::new);
         pack.addProvider(ConfiguredFeatureProvider::new);
         pack.addProvider(PlacedFeatureProvider::new);
+        pack.addProvider(LootTableProvider::new);
+        pack.addProvider(BlockTagProvider::new);
+        pack.addProvider(RecipeProvider::new);
     }
 
     public void buildRegistry(RegistryBuilder registryBuilder) {

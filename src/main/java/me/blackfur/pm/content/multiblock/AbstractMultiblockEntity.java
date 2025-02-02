@@ -1,4 +1,4 @@
-package me.blackfur.pm.multiblock;
+package me.blackfur.pm.content.multiblock;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;

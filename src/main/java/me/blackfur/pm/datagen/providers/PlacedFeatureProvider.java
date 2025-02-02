@@ -1,7 +1,7 @@
 package me.blackfur.pm.datagen.providers;
 
-import me.blackfur.pm.materials.Material;
-import me.blackfur.pm.materials.Materials;
+import me.blackfur.pm.ProjectMachines;
+import me.blackfur.pm.generated.Materials;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
 import net.minecraft.registry.Registerable;
@@ -27,8 +27,8 @@ public class PlacedFeatureProvider extends FabricDynamicRegistryProvider {
         for (var material : Materials.MATERIALS) {
             var oreMaterial = material.oreMaterial();
             context.register(
-                    RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of("pm", Material.idFromString(material.rawName() + " Ore Placed"))),
-                    new PlacedFeature(registryLookup.getOrThrow(RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of("pm", Material.idFromString(material.rawName() + " Ore")))),
+                    RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of("pm", ProjectMachines.idFromString(material.rawName() + " Ore Placed"))),
+                    new PlacedFeature(registryLookup.getOrThrow(RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of("pm", ProjectMachines.idFromString(material.rawName() + " Ore")))),
                             List.of(
                                     CountPlacementModifier.of(oreMaterial.veinCount()),
                                     SquarePlacementModifier.of(),

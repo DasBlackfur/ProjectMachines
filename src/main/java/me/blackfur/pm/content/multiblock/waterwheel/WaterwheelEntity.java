@@ -1,6 +1,6 @@
-package me.blackfur.pm.multiblock.waterwheel;
+package me.blackfur.pm.content.multiblock.waterwheel;
 
-import me.blackfur.pm.multiblock.AbstractMultiblockEntity;
+import me.blackfur.pm.content.multiblock.AbstractMultiblockEntity;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
